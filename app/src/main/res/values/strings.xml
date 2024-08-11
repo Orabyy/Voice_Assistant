@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Voice Assistant</string>
+    <string name="activity_profile">Profile</string>
+    <string name="activity_balance">Balance</string>
+
+    <string name="profileSynonyms">
+        <item>Profile</item>
+        <item>Account</item>
+    </string>
+
+    <string name="balanceSynonyms">
+        <item>Balance</item>
+        <item>pay</item>
+        <item>payment</item>
+        <item>payments</item>
+        <item>bill</item>
+        <item>bills</item>
+        <item>invoice</item>
+        <item>wallet</item>
+    </string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <capability android:name="actions.intent.OPEN_APP_FEATURE">
+        <shortcut-fulfillment>
+            <parameter android:name="profile.name"/>
+        </shortcut-fulfillment>
+    </capability>
+
+    <shortcut android:shortcutId="@string/activity_profile">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="profile.name"
+                android:value="@string/profileSynonyms" />
+        </capability-binding>
+        <intent android:targetPackage="com.example.voiceassistant"
+            android:targetClass="com.example.voiceassistant.Profile">
+            <parameter android:name="profile.name" android:key="profile" />
+        </intent>
+    </shortcut>
+
+
+    <capability android:name="actions.intent.OPEN_APP_FEATURE">
+        <shortcut-fulfillment>
+            <parameter android:name="balance.name"/>
+        </shortcut-fulfillment>
+    </capability>
+
+    <shortcut android:shortcutId="@string/activity_balance">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="balance.name"
+                android:value="@string/profileSynonyms" />
+        </capability-binding>
+        <intent android:targetPackage="com.example.voiceassistant"
+            android:targetClass="com.example.voiceassistant.Balance">
+            <parameter android:name="balance.name" android:key="balance" />
+        </intent>
+    </shortcut>
+
+
+</shortcuts>
